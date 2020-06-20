@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenges</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // challenge 1
+//function add (a,b){
+  //  console.log(a+b);
+    
+//}sum(a+b)
+var add = (...args) =>{
+    return args.reduce((a, b) => a+ b,0);
+}
+//console.log(add(1,8));
+//challenge 2
+"use strict";
+const arr = [1, 2];
+arr.push(3);
+//console.log(arr);
+arr1 = [1, 2, 3, 4];
+//console.log(arr1);
+
+// challenge 3
+var i = 10;
+for (let i = 0; i < 5; i++) {
+  // some stuff
+  //console.log(i);
+}
+//console.log(i);
+
+// challenge 4
+"use strict";
+var a = 5,
+  b = 10;
+if (b > a) {
+  let c = 2;
+  c = a + b + c;
+  //console.log(c);
+ }
+ // challenge 5
+
+ "use strict";
+
+function isNumber(a) {
+  return typeof a === "number" ? "That's number" : "That's not a number";
+}
+//console.log(isNumber(10));
+//console.log(isNumber("gws"));
+//console.log(isNumber(false));
+
+// challenge 6
+var mult = (a,b) => (a*b);
+//setTimeout(() => //console.log(mult(5, 10)), 1000);
+
+ //challenge 7
+//es6
+function multiply(a, mult =2){
+//  console.log(a* mult);
+  
+}
+//multiply(2);
+
+let double = n => n * 2;
+//console.log( double(2));
+
+// challenge 8 copied
+function missingArg() {
+  throw new Error("Function square requires an argument!");
+}
+function square(a = missingArg()) {
+  //console.log(a * a);
+}
+///square(10);
+//square();
+
+// challenge 9
+var obj = {
+  x: 5,
+  y: 20,
+  z: 3
+};
+function multiply(x,y,z) {
+  ///  console.log(x * y * z) ;
+}
+multiply("5", "20", "3");
+// challenge 10
+var numbers = [1, 2, 3, 4, 5, 6, 7];
+var  [a, b, ...c] = numbers;
+ //console.log(a ,b, c);
+
+// challenge 11
+//var a, b, c, d, arr3;
+
+//a = [1, 2];
+//b = [4, 5];
+//c = [8, 9, 10];
+//d = 11;
+//arr3 = [0, ...a, 3, ...b, 6, 7, ...c, d];
+//console.log(arr3);
+
+// challenge 12
+//var a = [1, 2, 3];
+//var b = [...a]; 
+//b.push("new element");
+//console.log(a);
+//console.log(b);
+
+// challenge 13
+var cars = [
+  { brand: "Honda", price: 13000 },
+  { brand: "Rolls-Royce", price: 120000 }
+];
+
+function carInfo(car) {
+  return `Price of my new ${car.brand} \
+is ${car.price}$ and it is \
+${car.price <= 20000 ? "cheap" : "expensive"} car.`;
+}
+//cars.forEach(car => console.log(carInfo(car)));
+
+// challenge 14
+
+var person1 = {
+  name: "Mike",
+  info: {
+    country: "Spain",
+    age: 23
+  },
+  postsQuantity: 100
+};
+
+var person2 = {
+  name: "Alice",
+  info: {
+    country: "Italy",
+    age: 25
+  }
+};
+function shortPerson(obj) {
+  var {
+    name: n,
+    info: { country: c, age: a },
+    postsQuantity: p = 0
+  } = obj;
+  return {
+    n,
+    c,
+    a,
+    p
+  };
+}
+//console.log(shortPerson(person1));
+//console.log(shortPerson(person2));
+
+// challenge 15
+var vowelsCount = 0;
+var vowels = ["a", "e", "i", "o", "u"];
+var str = "Today is best day of my life";
+for (let s of str) {
+  if (vowels.includes(s)) vowelsCount++; // ES2016 (ES7) syntax
+}//console.log(vowelsCount);
+
+// challenge 16
+var a = "first";
+var b = "second";
+[a, b] = [b, a];
+//console.log(a, b);
+
+// challenge 18
+class Fruit {
+  constructor(title, price) {
+    this.title = title;
+    this.price = price;
+  }
+  priceInfo() {
+    return `Price of one ${this.title} is \
+${this.price}$`;
+  }
+}
+var apple = new Fruit("Apple", 2);
+//console.log(apple.priceInfo());
+var orange = new Fruit("Orange", 3);
+//console.log(orange.priceInfo());
+
+// challenge 19
+
+
+
+ 
+
+
+
+
+
+</script>
+</html>
